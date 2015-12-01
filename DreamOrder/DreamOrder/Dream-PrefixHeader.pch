@@ -1,0 +1,15 @@
+//
+//  Dream-PrefixHeader.pch
+//  DreamOrder
+//
+//  Created by Allan on 15/11/25.
+//  Copyright © 2015年 Allan. All rights reserved.
+//
+
+#ifndef Dream_PrefixHeader_pch
+#define Dream_PrefixHeader_pch
+
+#define kScreenWidth     ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight    ([UIScreen mainScreen].bounds.size.height)
+
+#endif /* Dream_PrefixHeader_pch */

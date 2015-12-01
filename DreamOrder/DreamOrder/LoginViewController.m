@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "DreamTabBarViewController.h"
+#import "DreamHttpRequest.h"
+
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -25,6 +27,7 @@
 
     self.userNameTextField.text = @"Allan";
     self.passwordTextField.text = @"aaaaaaa";
+    
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -42,6 +45,7 @@
 }
 - (IBAction)registButtonClick:(id)sender {
     
+    [DreamHttpRequest userRegister];
     
 }
 #pragma mark - UITextFieldDelegate
